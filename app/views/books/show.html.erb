@@ -4,4 +4,5 @@
 <P><strong>Body:</strong></P>
 <p><%= @book.body %></p>
 
-<%= book_to "Edit", edit_book_path(@book.id) %>
+<%= link_to "Edit", books_edit_path(@book.id) %>
+<%= link_to "Destroy", book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
