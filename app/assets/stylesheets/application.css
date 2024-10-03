@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: 'Kaushan', cursive, sans-serif;
+}
+
+body {
+  text-align: left
+}
+
+header {
+  margin: 30px 0px 30px 10px ;
+}
+
+main {
+  margin: 30px ;
+}
+
+.show {
+  margin: 30px 0px 30px 60px ;
+}
+
+.link {
+  margin-left: 10px ;
+}

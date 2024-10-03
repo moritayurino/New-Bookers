@@ -1,4 +1,7 @@
+<body>
+<main>
 <h1>Books</h1>
+<br
 <% @books.each do |book| %>
   <table><thead><tr><th>Title</th><th>Body</th></tr></thead>
   <tbody><tr><td><span><%= link_to book.title, book_path(book.id) %></span></td>
@@ -8,8 +11,11 @@
   <td><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></td>
   </tr></tbody></table>
 <% end %>
+</main>
 
+<main>
 <h2>New book</h2>
+<br>
 <% if @book.errors.any? %>
   <%= @book.errors.count %>errors prohibited this book from being saved:
   <ul>
@@ -27,3 +33,6 @@
 
   <p><%= f.submit 'Create Book' %></p>
 <% end %>
+</div>
+</main>
+</body>
