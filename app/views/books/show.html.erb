@@ -1,8 +1,20 @@
-<body><div class="show"><p><%= flash[:notice] %></p>
-<table>
-<tr><th>Title:</th><td><%= @book.title %></td></tr>
-<tr><th>Body:</th><td><%= @book.body %></td></tr>
-</table></div>
-<div class="link">
-<table><tr><td><%= link_to "Edit", edit_book_path(@book.id) %></td><td>|</td><td><%= link_to "Back", books_path %></td></tr></table>
-</div></body>
+<body>
+<p><%= flash[:notice] %></p>
+<table class="is_show">
+<tr>
+<th>Title:</th>
+<td><%= @book.title %></td>
+</tr>
+<tr>
+<th>Body:</th>
+<td><%= @book.body %></td>
+</tr>
+</table>
+<table class="is_link">
+<tr>
+<td><%= link_to "Edit", edit_book_path(@book.id) %></td>
+<td> | </td>
+<td><%= link_to "Back", books_path %></td>
+</tr>
+</table>
+</body>

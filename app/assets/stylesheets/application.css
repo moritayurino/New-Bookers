@@ -25,6 +25,7 @@ h1, h2 {
 }
 
 body {
+  margin: 20px ;
   text-align: left
 }
 
@@ -33,13 +34,26 @@ header {
 }
 
 main {
-  margin: 30px ;
+  margin: 10px 0px 0px 30px ;
 }
 
-.show {
-  margin: 30px 0px 30px 60px ;
+table.is_book {
+  padding: 10px 0px 10px 0px ;
 }
 
-.link {
-  margin-left: 10px ;
+table.is_book thead {
+  text-align: center;
+}
+    
+table.is_book td {
+  padding-right:  10px ;
+  text-align: left;
+}
+
+table.is_show th {
+  padding: 0px 0px 30px 20px;
+}
+
+table.is_show td {
+  padding-bottom: 30px;
 }
