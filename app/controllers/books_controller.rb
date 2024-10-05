@@ -16,7 +16,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id)
     else
       flash.now[:notice] = "Can't be blank"
-      render :show
+      render :index
     end
   end
 
